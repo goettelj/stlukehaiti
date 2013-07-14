@@ -1,0 +1,662 @@
+/*
+Smiley Wiley Breast Cancer Foundation
+Site by Bella Group, Inc.
+http://bellagroupinc.com/
+
+Version: 1.0
+Author: Nick Rozwadowski
+Date: April 1, 2012
+*/
+
+/*
+Swatch Colors
+===========================================
+Brown				#42210B
+Light Green			#879904
+===========================================
+*/
+
+
+/*Reset All*/
+*{ margin:0; padding:0; border:none; z-index:0; }
+
+html {
+	height: 100%;
+	font-size: 14px;
+	}
+body {
+	min-width: 1068px;
+	height: 100%;
+	color: #42210B;
+	font-size: 14px;
+	font-family: 'Century Gothic', 'Lucida Grande', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	}
+h1, h2, h3 { margin-bottom: .5em; }
+#wrapper {
+	height: 100%;
+	height: auto !important;
+	min-height: 100%;
+	margin: 0 0 -80px 0;
+	padding: 0;
+	position: relative;
+	}
+
+#headerright {
+	position: absolute;
+	top: 30px;
+	right: 24px;
+	width: 800px;
+	}
+	
+#page {
+	position: relative;
+	height: 100% !important;
+	min-height: 100% !important;
+	width: 1068px;
+	margin: 0 auto 0 auto; /*top was negative*/
+	padding: 0 0 -10px 0;
+	}
+	
+	#header {
+		width: 1020px;
+		height: 120px;
+	/*IE8*/	min-height: 120px;
+		margin: 0 auto 0 auto;
+		padding-top: 15px;
+		}
+		#topBar {
+			margin-top: 10px;
+			}
+	#nav {
+		float: right;
+		color: #42210B;
+		font-weight: bold;
+		width: 900px;
+		margin: 0 auto 0 auto;
+		height: 30px;
+		padding: 8px 0 0 0;
+		position: relative;
+		}
+	
+		#nav ul.mainmenu {
+			color: #42210B;
+			font-size: 16px;
+			list-style-type: none;
+			/*display: inline;*/
+			text-align: center; /**/
+			margin: 3px auto 0 auto;
+			}
+		
+		#nav ul.mainmenu li {
+			display: inline;
+			padding: 5px;
+			}
+			
+		#nav ul.mainmenu li a,
+		#nav ul.mainmenu li a:active,
+		#nav ul.mainmenu li a:visited {
+			color: #42210B;
+			text-decoration: none;
+			text-transform: uppercase;
+			border-right: 2px solid #42210B;
+			padding-right: 15px;
+			}
+		
+		#nav ul.mainmenu li a:hover {
+			color: #879904;
+			text-decoration: none;
+			border-right: 2px solid #42210B;
+			padding-right: 15px;
+			}
+		
+		li.current_page_item a {
+			color: #879904 !important;
+			}
+		li.page-item-26 a {
+			border-right: none !important;
+			padding-right: 0px !important;
+			}
+			
+	#imgbox {
+		display: block;
+		width: 1020px;
+		height: 332px;
+		margin-top: 10px;
+		position: relative;
+		}
+	
+	#dot_bar {
+		display: block;
+		height: 38px;
+		width: 1020px;
+		background-image: url('/images/bar_long.png');
+		background-repeat: no-repeat;
+		background-position-y: 50%;
+		}
+	#dashedLine, .dashed-line {
+		display: block;
+		height: 6px;
+		background: url('/images/dashed_line.png') 0 50% repeat-x;
+		padding: 10px;
+		}
+	#content {
+		float: left;
+		clear: none;
+		width: 1020px;
+		margin: 0 24px 25px 24px !important;
+		position: relative;
+		font-size: 14px;
+		}
+		
+		.post {
+			margin: 0;
+			line-height: 150% !important;
+			}
+			
+			.post h3 {
+				font-size: 18px;
+				color: #879904;
+				font-weight: bold;
+				margin-bottom: .5em;
+				}
+			.topimageleft {
+				margin-right: 15px;
+				}
+			.topimageright {
+				margin: auto 0 auto 0;
+				display: block;
+				}
+		
+			.titleimg {
+				margin: 0 0 15px 0;
+				}
+			#seventywideleft {
+				width: 70%;
+				float: left;
+				}
+			#tenwideright {
+				width: 30px;
+				float: right;
+				}
+			#thirtywideright, #massCards {
+				width: 260px;
+				float: right;
+				}
+				#thirtywideright p {
+					padding-top: 70px;
+					}
+				#massCards h3, #massCards p, #massCards img {
+					margin-bottom: .5em;
+				}
+			#thirtywideleft {
+				width: 250px;
+				float: left;
+				}
+			.fortyleft {
+				padding-left: 40px;
+				}
+				.entry p,
+				#seventywideleft p,
+				#seventywideleft ol,
+				#seventywideleft h4 {
+					padding-bottom: 10px;
+					}
+			#seventywideright {
+				width: 67%;
+				float: right;
+				padding: 0 0 0 20px;
+				border-left: 2px dotted #000;
+				}
+				#seventywideright p {
+					padding-bottom: 10px;
+					}
+			.smiley {
+				margin-top: 25px;
+				}
+			.sideimg {
+				margin-bottom: 15px;
+			}
+				.sideimg p {
+					font-size: 10px;
+					font-weight: bold;
+					padding-bottom: 20px;
+					}
+				.padtwenty {
+					padding-top: 20px;
+					}
+				.padseventy {
+					padding-top: 70px;
+					}
+			.post ol {
+				margin-left: 20px;
+				}
+			#one-thirdleft,
+			#one-thirdcenter,
+			#one-thirdright {
+				min-height: 225px !important;
+				position: relative;
+				margin-top: 20px;
+				}
+				#one-thirdleft {
+					width: 292px;
+					float: left;
+					}
+				#one-thirdcenter {
+					width: 292px;
+					float: left;
+					margin: 20px 68px 0 68px;
+					}
+				#one-thirdright {
+					width: 292px;
+					float: right;
+					}
+				.morelink {
+					position:absolute;
+					bottom: 0;
+					right: 0;
+					}
+				.morelinkleft {
+					position:absolute;
+					bottom: -10px;
+					left: 0;
+					}
+			.subtitle {
+				text-transform: uppercase;
+				font-size: 16px;
+				}
+			.paypal {
+				margin: 20px 0 10px 0;
+				}
+	.clearfooter {
+		height: 52px;
+		clear: both;
+		}
+
+#footer {
+	padding: 0;
+	margin: 0 auto 0 auto; 
+	width: 1032px;
+	height: 52px;
+	clear: both !important;
+	font-size: 12px;
+	color: #42210B;
+	position: relative;
+	top: 52px;
+	z-index: 1;
+	background-image: url('/images/footer.png');
+	background-repeat: no-repeat;
+	}
+	
+		.footerimg {
+			float: right;
+			clear: none;
+			display: block;
+			position:relative;
+			top: 0;
+			height: 52px;
+			width: 50px;
+			background: url('images/bella_logo.jpg') bottom;
+			text-indent: -99999px;
+			z-index: 1 !important;
+			}
+			
+		.footerimg:hover {
+			background-position:  0 0;
+			background: url('images/bella_logo_hover.jpg') bottom;
+			z-index: 1 !important;
+			}
+
+		#footer p {
+			margin: 0 auto 0 auto;
+			padding: 14px 10px 0 0;
+			text-align: right;
+			}
+		.offsetfooter{
+			margin-right: 60px;
+			}
+		
+		#footer img {
+			vertical-align: middle;
+			}
+		
+		#footer a,
+		#footer a:visited {
+			color: #42210B;
+			}
+			
+		#footer a:active,
+		#footer a:hover,
+		#footer a.active {
+			color: #879904;
+			}
+			
+#footerbg {
+	height: 52px;
+	position:relative;
+	top: 0;
+/*	background-image: url('/images/footer.png');
+	background-repeat: no-repeat;
+*/	}
+
+/*//////////////////////////////////////////*/
+
+label {
+	float: left;
+	clear: left;
+	width: 100px;
+	text-align: left;
+	}
+#one-thirdleft input,
+#send_message {
+	width: 175px;
+	height: 20px;
+	padding: 3px;
+	margin: 0 0 10px 0;
+	border: 1px solid #003767;
+	color: #003767;
+	background: -moz-linear-gradient(left, #CCC 0%, #FFF 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#CCC), color-stop(100%,#FFF));
+	font-size: 14px;
+	font-family: 'Century Gothic', 'Lucida Grande', Arial, sans-serif;
+	}
+#send_message {
+	height: 28px !important;
+	width: 75px !important;
+	float: right;
+	}
+	
+p#firstname_error,
+p#lastname_error,
+p#email_error,
+p#mail_success,
+p#mail_fail {
+	float: right;
+	width: 75px;
+	height: 20px;
+	padding: 3px;
+	text-align: center;
+	display: none;
+	}
+	
+p#firstname_error,
+p#lastname_error,
+p#email_error,
+p#mail_fail {
+	border: 1px solid red;
+	color: red;
+	background-color: pink;
+	}
+
+p#mail_success {
+	border: 1px solid green;
+	color: green;
+	background-color: lightgreen;
+	}
+
+
+/*//////////////////////////////////////////*/
+a,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
+	color: #42210B;
+	}
+
+a:hover {
+	color: #879904;
+	}
+	
+.floatright {
+	float: right;
+	}	
+
+.floatleft {
+	float: left;
+	}
+
+.center {
+	text-align: center !important;
+	}
+
+img.objectcenter,
+input.objectcenter {
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	}
+	
+.green {
+	color: #879904 !important;
+	}
+
+.caps {
+	text-transform: uppercase;
+	}
+
+.bold {
+	font-weight: bold;
+	}
+
+.italic {
+	font-style: italic;
+	}
+
+.underline {
+	text-decoration: underline;
+	}
+
+.eightteen {
+	font-size: 18px !important;
+	line-height: 125%;
+	}
+.fourteen {
+	font-size: 14px !important;
+	line-height: 150%;
+	}
+
+.fiftytop {
+	margin-top: 50px !important;
+	}
+.thirtytop {
+	margin-top: 30px !important;
+	}
+
+.tenbottom {
+	margin-bottom: 10px !important;
+	}
+
+/*///////////////////////////////////////////////////////*/		
+
+.button-left {
+	width: 48px;
+	height: 332px;
+	position: absolute;
+	left: 0;
+	background: url('images/arrow_left.png') bottom;
+	z-index: 1;
+	}
+	/*.button-left:hover {
+		background: url('images/arrow_left_hover.png') bottom;
+		}*/
+	
+.button-right {
+	width: 48px;
+	height: 332px;
+	position: absolute;
+	right: 0;
+	background: url('images/arrow_right.png') bottom;
+	z-index: 1;
+	}
+	/*.button-right:hover {
+		background: url('images/arrow_right_hover.png') bottom;
+		}*/
+
+.image_reel {
+	position: absolute;
+	top: 0;
+	left: -250px;
+	}
+
+
+.slide {
+	width: 500px;
+	height: 332px;
+/*	float: left;*/
+	position: relative;
+/*	padding-right: 12px !important;
+	margin-left: 12px !important;
+*/	}
+	
+.imgsub {
+	font-family: 'Lucida Grande', 'Arial', arial, sans-serif;
+	font-size: 16px;
+	width: 346px;
+	color: white;
+	text-align: center;
+	background: url('images/trans_grey.png');
+	padding: 5px;
+	margin: 0 35px 10px 10px;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	}
+	
+/*///////////////////////////////////////////////////////*/	
+
+
+
+
+/*///////////////////////////////////////////////////////*/	
+
+
+
+	
+
+/* End Structure */
+
+
+
+/* Begin Images */
+p img {
+	max-width: 100%;
+	}
+	
+.entry object {
+	float: right;
+	text-indent: 0px !important;
+	clear: none;
+	}
+.entry embed {
+	text-indent: 0px !important;
+	}
+	
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+
+/* End Images */
+
+
+
+/* Begin Various Tags & Classes */
+
+
+.hidden {
+	display: none;
+	}
+	
+.screen-reader-text {
+     position: absolute;
+     left: -1000em;
+}
+
+hr {
+	display: none;
+	}
+
+a img {
+	border: none !important;
+	}
+
+
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* End captions */
+
+/* AMBASSADORS */
+.ambassador {
+	min-height: 125px;
+	margin-bottom: 15px;
+}
+.ambassador img {
+	margin-right: 15px;
+	vertical-align: top;
+}
+.ambassador-info {
+	display: inline-block;
+	width: 570px;
+}
+
+/*MASS CARDS PAGE*/
+.mass-card {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.mass-card-links label {
+	display: inline;
+	font-weight: bold;
+}
+.mass-card-preview {
+	margin-bottom: 10px;
+}
+
+/* STORIES PAGE */
+.post-meta-label {
+	font-weight: bold;
+}
+.category-stories #tenwideright {
+	background: url('/images/bar_tall.png') repeat-y;
+}
+.category-stories .sideimg {
+	margin-bottom: 5px;
+}
+.category-stories h2 {
+	/* POST TITLE */
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #879904;
+	font-weight: bold;
+	margin-bottom: 0;
+	
+}
+.caption {
+	font-size: 18px;
+	color: #879904;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+.wp-post-image {
+	display: inline-block;
+	margin-right: .5em;
+}
+.post-title-container {
+	display: inline-block;
+}
+.post-title-container label {
+	width: auto;
+	margin-right: 5px;
+}
+.story-separator {
+	margin-bottom: 10px;
+}
