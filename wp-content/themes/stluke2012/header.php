@@ -91,7 +91,7 @@
 				<img id="topBar" src="<?php bloginfo('stylesheet_directory'); ?>/images/bar_header.png" class="floatright">
 				<div id="nav">
 					<ul class="mainmenu">
-						<?php wp_list_pages('title_li=&exclude=68,72,76,148'); ?> <!--exclude 'slideshow' and 'grid' page-->
+						<?php wp_list_pages('title_li=&include=6,7,10,12,14,16,155,26'); ?> <!--exclude 'slideshow' and 'grid' page-->
 					</ul>
 				</div>
 			

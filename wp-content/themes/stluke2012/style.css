@@ -593,6 +593,12 @@ div.aligncenter {
 }
 /* End captions */
 
+#content .seventy-centered {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+
 /* AMBASSADORS */
 .ambassador {
 	min-height: 125px;
@@ -659,4 +665,13 @@ div.aligncenter {
 }
 .story-separator {
 	margin-bottom: 10px;
+}
+
+/* CHRISTMAS PARTIES */
+#xmasLogo {
+	display: block;
+	margin: 0 auto;
+}
+#xmasPartyMap {
+	width: 100%;
 }
