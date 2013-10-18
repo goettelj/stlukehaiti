@@ -13,6 +13,7 @@ Swatch Colors
 ===========================================
 Brown				#42210B
 Light Green			#879904
+Christmas Party Red #bf1f2d
 ===========================================
 */
 
@@ -674,4 +675,17 @@ div.aligncenter {
 }
 #xmasPartyMap {
 	width: 100%;
+}
+#waysToHelp {
+	color: #879904;
+}
+#waysToHelp p {
+	font-weight: bold;
+	padding-bottom: .5em;
+	font-size: 1.143em;
+}
+#waysToHelp ul {
+	color: #42210B;
+	padding-left: 1em;
+	margin-bottom: 1em;
 }
