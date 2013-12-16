@@ -689,3 +689,16 @@ div.aligncenter {
 	padding-left: 1em;
 	margin-bottom: 1em;
 }
+
+/* CHRISTMAS CARDS */
+#seventywideleft.christmas-card-content p {
+  padding-bottom: 1em;
+}
+.post-card img { 
+  margin: 0 auto 1em auto;
+  display: block;
+}
+.option-title {
+  color: #879904;
+  font-weight: bold;
+}
