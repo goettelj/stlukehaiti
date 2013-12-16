@@ -44,9 +44,31 @@ h1, h2, h3 { margin-bottom: .5em; }
 	position: relative;
 	}
 
+#externalNav {
+  float: right;
+  margin-top: 1.25em;
+}
+#externalNav a {
+  font-family: 'Century Gothic', 'Lucida Grande', Arial, sans-serif;
+  font-size: 1.25em;
+  color: white;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: .25em;
+  cursor: pointer;
+}
+.button-link { padding: 0 .5em; }
+.donate-link { background-color: #879904; }
+.join-email-link { background-color: #42210B; }
+.icon { width: 32px; }
+.facebook-link { background: #265999 url('/images/icons/facebook-32.png') 50% 50%; }
+.twitter-link { background: #00B0EF url('/images/icons/twitter-32.png') 50% 50%; }
+
 #headerright {
 	position: absolute;
-	top: 30px;
+	top: 80px;
 	right: 24px;
 	width: 800px;
 	}

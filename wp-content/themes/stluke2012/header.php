@@ -84,19 +84,32 @@
 	<div id="page">
 		<div id="header">
 			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/header_logo.png" alt="St. Luke Foundation for Haiti" class="">
+			<nav id="externalNav">
+			  <a class="donate-link button-link" href="https://donatenow.networkforgood.org/stlukehaiti" target="_blank">DONATE
+			  </a><a class="join-email-link button-link" href="http://oi.vresp.com/?fid=beb39cebc0" target="_blank">JOIN EMAIL LIST
+			  </a><a class="facebook-link icon" href="http://www.facebook.com/pages/The-St-Luke-Foundation-for-Haiti/160329870739535" target="_blank">
+			  </a><a class="twitter-link icon" href="https://twitter.com/Stlukehaiti" target="_blank"></a>
+			</nav>
 			<div id="headerright">
-				<a href="http://www.facebook.com/pages/The-St-Luke-Foundation-for-Haiti/160329870739535"><img src="<?php bloginfo('template_directory'); ?>/images/header_facebook.png" class="floatright tenbottom" alt="Facebook"></a>
-				<a href="https://donatenow.networkforgood.org/stlukehaiti"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/header_donate.png" alt="Donate" class="floatright tenbottom"></a>
+				<!--
+				<a href="http://www.facebook.com/pages/The-St-Luke-Foundation-for-Haiti/160329870739535">
+				  <img src="<?php bloginfo('template_directory'); ?>/images/header_facebook.png" class="floatright tenbottom" alt="Facebook">
+				</a>
+				<a href="https://donatenow.networkforgood.org/stlukehaiti">
+				  <img src="<?php bloginfo('stylesheet_directory'); ?>/images/header_donate.png" alt="Donate" class="floatright tenbottom">
+				</a>
+			
 				<br /><br />
-				<img id="topBar" src="<?php bloginfo('stylesheet_directory'); ?>/images/bar_header.png" class="floatright">
+					-->
+				<img id="topBar" src="<?php bloginfo('stylesheet_directory'); ?>/images/bar_header.png" class="floatright" />
 				<div id="nav">
 					<ul class="mainmenu">
 						<?php wp_list_pages('title_li=&include=6,7,10,12,14,16,155,26'); ?> <!--exclude 'slideshow' and 'grid' page-->
 					</ul>
 				</div>
 			
-			</div>
-		</div>
+			</div><!-- END OF #headerright -->
+		</div><!-- END OF #header -->
 				
 				
 				<?php  $custom_values = get_post_custom_values('image_header');
