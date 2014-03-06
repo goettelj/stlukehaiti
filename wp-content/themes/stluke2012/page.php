@@ -1,6 +1,6 @@
 <?php 
 	get_header(); 
-	$pagesWithoutAutoParagraph = array("Ambassadors", "Mass Cards");
+	$pagesWithoutAutoParagraph = array("Ambassadors", "Mass Cards", "AAN");
 	if ( in_array(get_the_title(), $pagesWithoutAutoParagraph) ){
 		remove_filter('the_content','wpautop');
 	}
