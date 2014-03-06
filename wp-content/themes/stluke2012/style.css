@@ -65,6 +65,7 @@ h1, h2, h3 { margin-bottom: .5em; }
 .icon { width: 32px; }
 .facebook-link { background: #265999 url('/images/icons/facebook-32.png') 50% 50%; }
 .twitter-link { background: #00B0EF url('/images/icons/twitter-32.png') 50% 50%; }
+.linkedin-link { background: #0082b2 url('/images/icons/linkedin-32.png') 50% 50%; }
 
 #headerright {
 	position: absolute;

@@ -88,7 +88,8 @@
 			  <a class="donate-link button-link" href="https://donatenow.networkforgood.org/stlukehaiti" target="_blank">DONATE
 			  </a><a class="join-email-link button-link" href="http://eepurl.com/LD9_1" target="_blank">JOIN EMAIL LIST
 			  </a><a class="facebook-link icon" href="http://www.facebook.com/pages/The-St-Luke-Foundation-for-Haiti/160329870739535" target="_blank">
-			  </a><a class="twitter-link icon" href="https://twitter.com/Stlukehaiti" target="_blank"></a>
+			  </a><a class="twitter-link icon" href="https://twitter.com/Stlukehaiti" target="_blank">
+			  </a><a class="linkedin-link icon" href="http://www.linkedin.com/company/st-luke-foundation-for-haiti/" target="_blank"></a>
 			</nav>
 			<div id="headerright">
 				<!--
