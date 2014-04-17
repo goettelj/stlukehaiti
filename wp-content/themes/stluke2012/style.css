@@ -34,7 +34,7 @@ body {
 	margin: 0;
 	padding: 0;
 	}
-h1, h2, h3 { margin-bottom: .5em; }
+h1, h2, h3 { margin-bottom: .5em; line-height: 1.25em; }
 #wrapper {
 	height: 100%;
 	height: auto !important;
@@ -46,7 +46,7 @@ h1, h2, h3 { margin-bottom: .5em; }
 
 #externalNav {
   float: right;
-  margin-top: 1.25em;
+  margin: 18px 0;
 }
 #externalNav a {
   font-family: 'Century Gothic', 'Lucida Grande', Arial, sans-serif;
@@ -68,11 +68,11 @@ h1, h2, h3 { margin-bottom: .5em; }
 .linkedin-link { background: #0082b2 url('/images/icons/linkedin-32.png') 50% 50%; }
 
 #headerright {
-	position: absolute;
-	top: 80px;
-	right: 24px;
-	width: 800px;
-	}
+    position: absolute;
+    top: 80px;
+    right: 24px;
+    width: 800px;
+}
 	
 #page {
 	position: relative;
@@ -83,65 +83,79 @@ h1, h2, h3 { margin-bottom: .5em; }
 	padding: 0 0 -10px 0;
 	}
 	
-	#header {
-		width: 1020px;
-		height: 120px;
-	/*IE8*/	min-height: 120px;
-		margin: 0 auto 0 auto;
-		padding-top: 15px;
+		.main-header {
+		    margin-bottom: 15px;
 		}
 		#topBar {
 			margin-top: 10px;
 			}
-	#nav {
-		float: right;
-		color: #42210B;
-		font-weight: bold;
-		width: 900px;
-		margin: 0 auto 0 auto;
-		height: 30px;
-		padding: 8px 0 0 0;
-		position: relative;
-		}
-	
-		#nav ul.mainmenu {
-			color: #42210B;
-			font-size: 16px;
-			list-style-type: none;
-			/*display: inline;*/
-			text-align: center; /**/
-			margin: 3px auto 0 auto;
-			}
-		
-		#nav ul.mainmenu li {
-			display: inline;
-			padding: 5px;
-			}
 			
-		#nav ul.mainmenu li a,
-		#nav ul.mainmenu li a:active,
-		#nav ul.mainmenu li a:visited {
-			color: #42210B;
-			text-decoration: none;
-			text-transform: uppercase;
-			border-right: 2px solid #42210B;
-			padding-right: 15px;
-			}
-		
-		#nav ul.mainmenu li a:hover {
-			color: #879904;
-			text-decoration: none;
-			border-right: 2px solid #42210B;
-			padding-right: 15px;
-			}
-		
-		li.current_page_item a {
-			color: #879904 !important;
-			}
-		li.page-item-26 a {
-			border-right: none !important;
-			padding-right: 0px !important;
-			}
+	       .main-logo {
+	           position: absolute;
+               top: 15px;
+	       }
+	       .main-menu-wrapper { float: right; }
+	       ul.main-menu, ul.dropit-submenu {
+	           list-style-type: none;
+	       }
+	       ul.main-menu > li {
+	           float: left;
+	           display: inline-block;
+	           padding: 12px 0;
+	       }
+	       ul.main-menu > li > a, ul.dropit-submenu a {
+	           text-transform: uppercase;
+	           font-size: 16px;
+	           padding: 0 15px;
+	           border-right: 2px solid #42210B;
+	           font-weight: bold;
+   	       }
+   	       ul.main-menu > li:last-child a {
+   	           border-right: none;
+   	       }
+   	       .dot-bar {
+       		    display: block;
+           		height: 13px;
+           		background-image: url('/images/dot-pattern.png');
+           		background-repeat: repeat-x;
+           		background-position-y: 50%;
+       		}
+       		.dot-bar-top {
+       		    width: 825px;
+                float: right;
+       		}
+       	    .dot-bar-bottom {
+           	    clear: both;
+           	}
+           	/* TEAM MENU */
+            ul.dropit-submenu {
+                position: absolute;
+                background-color: #fff;
+                border: 1px solid #42210B;
+                padding: 6px 0;
+                margin: 3px 0 0 1px;
+                z-index: 1000;
+                -webkit-border-radius: 3px;
+                   -moz-border-radius: 3px;
+                        border-radius: 3px;
+                -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+                   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+                        box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+            }          
+            ul.dropit-submenu a {
+                display: block;
+                line-height: 25px;
+                padding: 5px 15px;
+                border-right: none;
+            }
+            ul.dropit-submenu a:hover {
+                background: #42210B;
+                color: #fff;
+                text-decoration: none;
+            }
+            li.current_page_item a {
+                color: #879904 !important;
+            }
 			
 	#imgbox {
 		display: block;
@@ -151,14 +165,7 @@ h1, h2, h3 { margin-bottom: .5em; }
 		position: relative;
 		}
 	
-	#dot_bar {
-		display: block;
-		height: 38px;
-		width: 1020px;
-		background-image: url('/images/bar_long.png');
-		background-repeat: no-repeat;
-		background-position-y: 50%;
-		}
+	
 	#dashedLine, .dashed-line {
 		display: block;
 		height: 6px;
@@ -725,3 +732,15 @@ div.aligncenter {
   color: #879904;
   font-weight: bold;
 }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* MOTHERS DAY */
+.Haiti.Moms a:link, .Jozy.and.Adriana a:link { color: #879904; }
+.Haiti.Moms a:visited, .Jozy.and.Adriana a:visited { color: #879904; }
+.Haiti.Moms a:hover, .Jozy.and.Adriana a:hover { color: #879904; text-decoration: underline; }
+

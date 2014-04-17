@@ -29,6 +29,8 @@
 	<?php wp_head(); ?>
 	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/dropit.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/common.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.jcarousel.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/contactform.js"></script>
 	<script type="text/javascript" charset="utf-8">
@@ -82,8 +84,8 @@
 	<noscript id="noscripterror"><p>This site uses AJAX and Javascript for many key elements, including navigation.  <br />Please enable Javascript or use a different browser.</p></noscript>
 	
 	<div id="page">
-		<div id="header">
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/header_logo.png" alt="St. Luke Foundation for Haiti" class="">
+		<header class="main-header">
+			<img class="main-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/header_logo.png" alt="St. Luke Foundation for Haiti" class="">
 			<nav id="externalNav">
 			  <a class="donate-link button-link" href="https://donatenow.networkforgood.org/stlukehaiti" target="_blank">DONATE
 			  </a><a class="join-email-link button-link" href="http://eepurl.com/LD9_1" target="_blank">JOIN EMAIL LIST
@@ -91,26 +93,23 @@
 			  </a><a class="twitter-link icon" href="https://twitter.com/Stlukehaiti" target="_blank">
 			  </a><a class="linkedin-link icon" href="http://www.linkedin.com/company/st-luke-foundation-for-haiti/" target="_blank"></a>
 			</nav>
-			<div id="headerright">
-				<!--
-				<a href="http://www.facebook.com/pages/The-St-Luke-Foundation-for-Haiti/160329870739535">
-				  <img src="<?php bloginfo('template_directory'); ?>/images/header_facebook.png" class="floatright tenbottom" alt="Facebook">
-				</a>
-				<a href="https://donatenow.networkforgood.org/stlukehaiti">
-				  <img src="<?php bloginfo('stylesheet_directory'); ?>/images/header_donate.png" alt="Donate" class="floatright tenbottom">
-				</a>
-			
-				<br /><br />
-					-->
-				<img id="topBar" src="<?php bloginfo('stylesheet_directory'); ?>/images/bar_header.png" class="floatright" />
-				<div id="nav">
-					<ul class="mainmenu">
-						<?php wp_list_pages('title_li=&include=6,7,10,12,14,16,155,26'); ?> <!--exclude 'slideshow' and 'grid' page-->
-					</ul>
-				</div>
-			
-			</div><!-- END OF #headerright -->
-		</div><!-- END OF #header -->
+			<nav class="main-nav">
+			    <div class="dot-bar dot-bar-top"></div>
+		        <div class="main-menu-wrapper">
+				    <ul class="main-menu clearfix">
+    					<?php wp_list_pages('title_li=&include=6,7,10,12,14,16,155,26'); ?> <!--exclude 'slideshow' and 'grid' page-->
+    				</ul>
+    				<!-- THIS GETS MOVED WITH JAVASCRIPT -->
+    				<ul id="teamMenu">
+    				    <li><a href="/haitian-leadership">Haitian Leadership</a></li>
+    				    <li><a href="/advisory-council">Advisory Council</a></li>
+    				    <li><a href="/ambassadors">Ambassadors</a></li>
+    				    <li><a href="/partners">Partners</a></li>
+    				</ul>
+    			</div>
+				<div class="dot-bar dot-bar-bottom"></div>
+    		</nav>
+		</header>
 				
 				
 				<?php  $custom_values = get_post_custom_values('image_header');
