@@ -701,15 +701,15 @@ div.aligncenter {
 
 /* BLOG ENHANCEMENTS - UPDATED MAY 2014 */
 
-.blog-post img {
-	max-width: 100%;
-	width: auto;
-}
+
+/* -- structure --*/
+
+
+
 
 
 #content.blog-post {
 	width: 70%;
-	
 }
 
 
@@ -717,14 +717,117 @@ div.aligncenter {
 	float: left;
 	width: 25%;
 	
+}
+
+/* -- blog single post styles --*/
+
+.blog-post img {
+	max-width: 100%;
+	width: auto;
+}
+
+.blog-post h1 {
+	font-size: 2.7em;
+}
+
+.blog-post .byline {
+	font-size: 1.25em;
+	margin-bottom: .5em;
+}
+
+.blog-post .categories {
+	margin-bottom: 1em;
+}
+
+.pullquote {
+	color: #879904;
+	width: 40%;
+	float: right;
+	margin: 1em 0 1em 2em;
 	
+	/*background: url('/images/dot-pattern.png') top center repeat-x ;
+	padding-top: 1em;*/
+}
+.pullquote q {
+	font-size: 1.9em;
+	line-height: 1.4em;
+}
+
+.pullquote .attribution {
+	text-align: right;
+}
+
+.pullquote q:before {
+	content: "“";
+}
+
+.pullquote q:after {
+	content: "”";
 }
 
 
+.button {
+	display: inline-block;
+	margin: 1em 0px;
+	font-size: 1.2em;
+}
+
+.button a {
+	display: block;
+	background: #879904 ;
+	padding: .5em;
+	color: #fff;
+}
 
 
+.button a:hover {
+	background: #42210B;
+}
 
 
+.featured-slideshow {
+	position: relative;
+	margin: 2em 0 ;
+}
+
+figure img {
+	margin-bottom: .5em;
+}
+
+figure figcaption {
+	margin-bottom: 1em;
+}
+
+.featured-slideshow .caption_head {
+	font-weight: bold;
+}
+
+.back, .next {
+	position: absolute;
+	top: 32%;
+	width: 30%;
+	opacity: .8;
+	filter: alpha(opacity=70);
+	z-index: 800;
+	height: 25%;
+	cursor: pointer;
+}
+
+.back {
+	left: 0;
+	background: url(images/arrow_left.png) 15% 50% no-repeat;
+}
+
+.next {
+	right: 0;
+	background: url(images/arrow_right.png) 85% 50% no-repeat;
+
+}
+
+.back:hover, 
+.next:hover {
+	opacity: 1;
+}
 
 /* CHRISTMAS PARTIES */
 #xmasLogo {

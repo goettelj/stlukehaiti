@@ -12,21 +12,21 @@
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h1 class="pagetitle"><?php the_title(); ?></h1>
 			
-			<p class="byline">by <?php the_field('author'); ?>, <?php the_time('l, F jS, Y') ?></p>
-			
+			<p class="byline"><?php if(get_field('author')){ ?>by <?php the_field('author'); ?> / <?php } ?><?php the_time('l, F jS, Y') ?></p>
+			<p class="categories">Published in: <?php the_category(', ') ?></p>
 			
 			<div class="entry">
 				<?php if( method_exists( $GoogleTranslation, 'google_ajax_translate_button' ) ) {
     				$GoogleTranslation -> google_ajax_translate_button();
 				} ?>
-				<div class="alignimgright"><?php the_post_thumbnail( 'single-post-thumbnail' ); ?></div>
-				
+								
 				
 				<!-- NOTE: this pulls in the custom fields for "main content area" -->
 				
 				<?php get_template_part( 'parts/detail-page-options'); ?>
 				
 				<!-- END custom fields -->
+				
 				
 
 				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
@@ -78,6 +78,7 @@
 	</div>
 	<div id="sidebar" class="blog">
 		<div class="categories">
+			<h2>Read More</h2>
 			<?php wp_list_categories('title_li='); ?>
 		</div>
 		<?php get_template_part('parts/sidebar-blog'); ?>

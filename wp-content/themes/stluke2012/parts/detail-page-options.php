@@ -13,10 +13,13 @@ while(has_sub_field("content")): ?>
 		</figure>
 	
 	<?php elseif(get_row_layout() == "featured_slideshow"): // layout: one column wysiwyg ?>
+	
+			<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+			
 			<div class="featured-slideshow">
 		
 			<?php if(get_sub_field('slide')): ?>
-				<div class="slideshow">
+				<div class="cycle-slideshow" data-cycle-slides=".slideshow-slide" data-cycle-prev=".back" data-cycle-next=".next"  data-cycle-timeout=0>
 					<?php while(has_sub_field('slide')): ?>
 						<figure class="slideshow-slide">
 							<img src="<?php the_sub_field("image"); ?>" alt="<?php the_sub_field("alt"); ?>" title="<?php the_sub_field("title"); ?>" />
@@ -54,7 +57,7 @@ while(has_sub_field("content")): ?>
 		
 	<?php elseif(get_row_layout() == "pull_quote"): // layout: Pull Quote ?>
 	
-			<blockquote class="pullquote"><q><?php the_sub_field("quote"); ?>”</q><?php if(get_sub_field('attribution')) {?><p class="attribution">— <?php the_sub_field("attribution"); ?></p><?php }?></blockquote>	
+			<blockquote class="pullquote"><q><?php the_sub_field("quote"); ?></q><?php if(get_sub_field('attribution')) {?><p class="attribution">— <?php the_sub_field("attribution"); ?></p><?php }?></blockquote>	
 			
 	<?php elseif(get_row_layout() == "cta_button"): // layout: one column wysiwyg ?>
 
