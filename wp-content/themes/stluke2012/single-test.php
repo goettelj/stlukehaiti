@@ -11,7 +11,10 @@
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h1 class="pagetitle"><?php the_title(); ?></h1>
-
+			
+			<p class="byline">by <?php the_field('author'); ?>, <?php the_time('l, F jS, Y') ?></p>
+			
+			
 			<div class="entry">
 				<?php if( method_exists( $GoogleTranslation, 'google_ajax_translate_button' ) ) {
     				$GoogleTranslation -> google_ajax_translate_button();
@@ -29,7 +32,7 @@
 				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 				<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
 
-				<p class="postmetadata alt">
+				<!--<p class="postmetadata alt">
 						This entry was posted
 						<?php /* This is commented, because it requires a little adjusting sometimes.
 							You'll need to download this plugin, and follow the instructions:
@@ -55,7 +58,7 @@
 							Both comments and pings are currently closed.
 
 						<?php } ?>
-				</p>
+				</p>-->
 
 			</div>
 		</div>
@@ -73,7 +76,10 @@
 <?php endif; ?>
 
 	</div>
-	
-<?php get_sidebar('blog'); ?>
-
+	<div id="sidebar" class="blog">
+		<div class="categories">
+			<?php wp_list_categories('title_li='); ?>
+		</div>
+		<?php get_template_part('parts/sidebar-blog'); ?>
+	</div>
 <?php get_footer(); ?>

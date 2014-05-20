@@ -698,6 +698,34 @@ div.aligncenter {
 	margin-bottom: 10px;
 }
 
+
+/* BLOG ENHANCEMENTS - UPDATED MAY 2014 */
+
+.blog-post img {
+	max-width: 100%;
+	width: auto;
+}
+
+
+#content.blog-post {
+	width: 70%;
+	
+}
+
+
+#sidebar.blog {
+	float: left;
+	width: 25%;
+	
+	
+}
+
+
+
+
+
+
+
 /* CHRISTMAS PARTIES */
 #xmasLogo {
 	display: block;
