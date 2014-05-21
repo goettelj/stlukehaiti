@@ -8,7 +8,7 @@ while(has_sub_field("content")): ?>
 	
 	<?php if(get_row_layout() == "featured_image"): // layout: one column wysiwyg ?>
 		<figure>
-			<img src="<?php the_sub_field("image"); ?>" alt="<?php the_sub_field("alt"); ?>" title="<?php the_sub_field("title"); ?>" />
+			<img src="<?php the_sub_field("image"); ?>" alt="<?php the_sub_field("alt"); ?>" />
 			<figcaption><p><span class="caption_head"><?php the_sub_field("caption_head"); ?></span> <?php the_sub_field("caption"); ?></p></figcaption>
 		</figure>
 	
@@ -22,7 +22,7 @@ while(has_sub_field("content")): ?>
 				<div class="cycle-slideshow" data-cycle-slides=".slideshow-slide" data-cycle-prev=".back" data-cycle-next=".next"  data-cycle-timeout=0>
 					<?php while(has_sub_field('slide')): ?>
 						<figure class="slideshow-slide">
-							<img src="<?php the_sub_field("image"); ?>" alt="<?php the_sub_field("alt"); ?>" title="<?php the_sub_field("title"); ?>" />
+							<img src="<?php the_sub_field("image"); ?>" alt="<?php the_sub_field("alt"); ?>"  />
 							<figcaption><p><span class="caption_head"><?php the_sub_field("caption_head"); ?></span> <?php the_sub_field("caption"); ?></p></figcaption>
 						</figure>
 				
@@ -61,7 +61,7 @@ while(has_sub_field("content")): ?>
 			
 	<?php elseif(get_row_layout() == "cta_button"): // layout: one column wysiwyg ?>
 
-			<p class="button"><a href="<?php the_sub_field("cta_url"); ?>" title="<?php the_sub_field("title"); ?>"><?php the_sub_field("cta_text"); ?><?php
+			<p class="button"><a href="<?php the_sub_field("cta_url"); ?>" ><?php the_sub_field("cta_text"); ?><?php
 			 
 			if(get_sub_field('title'))
 			{?><span class="tip"><b><?php the_sub_field("title"); ?></b></span>
