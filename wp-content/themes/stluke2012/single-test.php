@@ -12,7 +12,7 @@
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h1 class="pagetitle"><?php the_title(); ?></h1>
 			
-			<p class="byline"><?php if(get_field('author')){ ?>by <?php the_field('author'); ?> / <?php } ?><?php the_time('l, F jS, Y') ?></p>
+			<p class="byline"><?php if(get_field('author')){ ?>by <?php the_field('author'); ?> / <?php } ?><?php the_time('F jS, Y') ?></p>
 			<p class="categories">Published in: <?php the_category(', ') ?></p>
 			
 			<div class="entry">

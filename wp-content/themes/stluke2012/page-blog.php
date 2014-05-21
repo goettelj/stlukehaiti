@@ -22,9 +22,13 @@ Template Name: Blog Homepage
 						   
 						    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 						        <?php setup_postdata($post); ?>
-						        <article class="featured-post">
+						        <article class="featured-post primary group">
+						            <h3><?php the_category(', ') ?>:</h3>
+						            <?php the_post_thumbnail('full'); ?>
 						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						            <span>Custom field from $post: <?php the_field('author'); ?></span>
+						            <p class="byline"><?php the_time('F jS, Y') ?></p>
+						            <p><?php echo excerpt(25); ?></p>
+						            <p class="readmore"><a href="<?php the_permalink(); ?>">Read more</a></p>
 						        </article>
 						    <?php endforeach; ?>
 						    
@@ -35,27 +39,34 @@ Template Name: Blog Homepage
 						<?php $posts = get_field('small_featured_stories');
 						 
 						if( $posts ): ?>
-						   
+						   <div class="group">
 						    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 						        <?php setup_postdata($post); ?>
 						        <article class="featured-post secondary">
+						            <h3><?php the_category(', ') ?>:</h3>
+						            <?php the_post_thumbnail('full'); ?>
 						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						            <span>Custom field from $post: <?php the_field('author'); ?></span>
+						            <p class="byline"><?php the_time('F jS, Y') ?></p>
+						            <p><?php echo excerpt(25); ?></p>
+						            <p class="readmore"><a href="<?php the_permalink(); ?>">Read more</a></p>
 						        </article>
 						    <?php endforeach; ?>
-						    
+						    </div>
 						    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 						<?php endif; ?>
 						
+					
 						<?php $posts = get_field('listed_stories');
 						 
 						if( $posts ): ?>
 						   
 						    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 						        <?php setup_postdata($post); ?>
-						        <article>
+						        <article class="group">
 						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						            <span>Custom field from $post: <?php the_field('author'); ?></span>
+						            <p class="byline"><?php the_time('F jS, Y') ?></p>
+						            <p><?php echo excerpt(25); ?></p>
+						            <p class="readmore"><a href="<?php the_permalink(); ?>">Read more</a></p>
 						        </article>
 						    <?php endforeach; ?>
 						    

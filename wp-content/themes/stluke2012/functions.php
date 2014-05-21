@@ -14,4 +14,11 @@ add_filter('single_template', create_function(
 	return $the_template;' )
 );
 
+
+//function to create on the fly excerpt lengths
+
+function excerpt($limit) {
+	    return wp_trim_words(get_the_excerpt(), $limit);
+	}
+
 ?>
