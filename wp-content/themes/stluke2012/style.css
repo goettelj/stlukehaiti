@@ -715,7 +715,10 @@ div.aligncenter {
 
 #content.blog-post,
 #content.blog-home {
-	width: 70%;
+	width: 68%;
+	padding-right: 3%;
+	/* background: url('/images/bar_tall.png') repeat-y right top; */
+	/*border-right: 1px dotted #879904;*/
 }
 
 #content.blog-post p,
@@ -725,11 +728,7 @@ div.aligncenter {
 }
 
 
-#sidebar.blog {
-	float: left;
-	width: 25%;
-	
-}
+
 
 .blog-post img,
 .blog-home img,
@@ -743,10 +742,74 @@ div.aligncenter {
 	font-size: 2.7em;
 }
 
+
+/* -- blog sidebar --*/
+
+#sidebar.blog {
+	float: left;
+	width: 23%;
+	
+}
+
+
+
+#sidebar.blog h2 {
+	font-size: 1.3em;
+	color: #879904;
+}
+
+#sidebar.blog .promo {
+	margin-bottom: 2em;
+	background:  url('/images/dashed_line.png') repeat-x left top;
+	padding-top: 1em;
+	
+}
+
+#sidebar.blog .promo img {
+	margin-bottom: .75em;
+	}
+
+
+.action-items {
+	margin-bottom: 2em;
+	border: 2px dotted rgba(135, 153, 4, .5);
+	padding: 1.5em;
+}
+
+.action-items ul {
+	list-style: none;
+	
+}	
+
+.action-items ul li {
+	padding: .5em 0;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-size: 16px;
+	display: block;
+	font-weight: bold;
+	
+}
+
+
+#sidebar.blog .action-items a {
+	color: #42210B;
+}
+
+#sidebar.blog .action-items a:hover {
+	color: #879904;
+}
+
+
+.action-items ul li a:before {
+	padding-right: .5em;
+}
+	
+
 /* -- blog homepage --*/
 
 
-.blog-home h2 {
+.blog-home h1 {
 	color: #879904;
 }
 
@@ -793,10 +856,14 @@ div.aligncenter {
 	color: #879904;
 	font-weight: bold;
 	text-transform: uppercase;
+	
 }
 
-.readmore:after {
-	font-family: ;
+.readmore a:after {
+	font-family: "SSGeomiconsSquared";
+	content: "\25B9";
+	font-size: .7em;
+	padding-left: .25em;
 }
 
 

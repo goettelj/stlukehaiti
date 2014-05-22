@@ -23,7 +23,6 @@ Template Name: Blog Homepage
 						    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 						        <?php setup_postdata($post); ?>
 						        <article class="featured-post primary group">
-						            <h3><?php the_category(', ') ?>:</h3>
 						            <?php the_post_thumbnail('full'); ?>
 						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						            <p class="byline"><?php the_time('F jS, Y') ?></p>
@@ -43,11 +42,10 @@ Template Name: Blog Homepage
 						    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 						        <?php setup_postdata($post); ?>
 						        <article class="featured-post secondary">
-						            <h3><?php the_category(', ') ?>:</h3>
 						            <?php the_post_thumbnail('full'); ?>
 						            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						            <p class="byline"><?php the_time('F jS, Y') ?></p>
-						            <p><?php echo excerpt(25); ?></p>
+						            <p><?php echo excerpt(15); ?></p>
 						            <p class="readmore"><a href="<?php the_permalink(); ?>">Read more</a></p>
 						        </article>
 						    <?php endforeach; ?>
