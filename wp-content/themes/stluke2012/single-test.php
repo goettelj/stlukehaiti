@@ -59,7 +59,23 @@
 
 						<?php } ?>
 				</p>-->
-
+			
+			<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+			<a class="addthis_button_preferred_1"></a>
+			<a class="addthis_button_preferred_2"></a>
+			<a class="addthis_button_preferred_3"></a>
+			<a class="addthis_button_preferred_4"></a>
+			<a class="addthis_button_compact"></a>
+			
+			</div>
+			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-537e5b4a7a0bdcbb"></script>
+			<!-- AddThis Button END -->
+			
+			
+			
+			
 			</div>
 		</div>
 
@@ -77,10 +93,10 @@
 
 	</div>
 	<div id="sidebar" class="blog">
-		<div class="categories">
-			<h2>Read More</h2>
-			<?php wp_list_categories('title_li='); ?>
-		</div>
 		<?php get_template_part('parts/sidebar-blog'); ?>
+		<div class="categories">
+			<h2>Categories</h2>
+			<ul><?php wp_list_categories('title_li='); ?></ul>
+		</div>
 	</div>
 <?php get_footer(); ?>

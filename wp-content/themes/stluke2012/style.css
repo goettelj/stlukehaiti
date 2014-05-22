@@ -713,16 +713,15 @@ div.aligncenter {
 	padding: 1.5em 0;
 }
 
-#content.blog-post,
-#content.blog-home {
+
+#content[class*='blog-'] {
 	width: 68%;
 	padding-right: 3%;
 	/* background: url('/images/bar_tall.png') repeat-y right top; */
 	/*border-right: 1px dotted #879904;*/
 }
 
-#content.blog-post p,
-#content.blog-home p {
+#content[class*='blog-'] p {
 	margin-bottom: 1em;
 	line-height: 1.45em;
 }
@@ -730,15 +729,13 @@ div.aligncenter {
 
 
 
-.blog-post img,
-.blog-home img,
+#content[class*='blog-'] img,
 #sidebar.blog img {
 	max-width: 100%;
 	height: auto;
 }
 
-.blog-post h1,
-.blog-home h1 {
+#content[class*='blog-'] h1 {
 	font-size: 2.7em;
 }
 
@@ -804,7 +801,12 @@ div.aligncenter {
 .action-items ul li a:before {
 	padding-right: .5em;
 }
+
+
+.categories ul {
+	list-style: none;
 	
+}	
 
 /* -- blog homepage --*/
 
@@ -814,6 +816,7 @@ div.aligncenter {
 }
 
 .blog-home a,
+.blog-category a,
 .featured-post h2 a {
 	color: #879904;
 }
