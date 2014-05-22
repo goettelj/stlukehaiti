@@ -19,6 +19,10 @@
 	<title>
 		<?php bloginfo('name'); ?>
 	</title>
+	
+	<!-- FONTS -->
+	<link href="<?php bloginfo('stylesheet_directory'); ?>/webfonts/ss-geomicons-squared.css" rel="stylesheet" />
+	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/slide_skin.css" type="text/css" media="screen" />
 	<!--[if lt IE 7]>
