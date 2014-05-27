@@ -22,6 +22,7 @@
 	
 	<!-- FONTS -->
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/webfonts/ss-geomicons-squared.css" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/4a07024c-dbae-4a77-80ec-b5247c924f44.css"/>
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/slide_skin.css" type="text/css" media="screen" />
