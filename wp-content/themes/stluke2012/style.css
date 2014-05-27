@@ -701,6 +701,43 @@ div.aligncenter {
 
 /* BLOG ENHANCEMENTS - UPDATED MAY 2014 */
 
+/* -- homepage --*/
+
+.column h2 {
+	font-family:'Century Gothic W01'; 
+	font-weight:700; 
+	font-style:normal;
+	text-transform: uppercase;
+	color: #879904;
+	/* -- text-shadow: 1px 1px 1px ##42210B; --*/
+	font-size: 1.8em;
+}
+
+.column article:after {
+	content: ".";
+	display: block;
+	clear: both;
+	background: url('/images/dashed_line.png') 0 50% repeat-x;
+	text-indent: -9999px;
+	padding: 0;
+}
+
+.column h3 {
+	font-size: 1.2em;
+}
+
+.column h3 a {
+	color: #879904;
+}
+
+.column h3 a:hover {
+	color: #42210B;
+}
+
+.entry .date-published {
+	padding-bottom: 0px;
+}
+
 
 /* -- structure --*/
 
@@ -862,6 +899,11 @@ div.aligncenter {
 	
 }
 
+article .readmore a,
+.column .readmore a {
+	color: #879904;
+}
+
 .readmore a:after {
 	font-family: "SSGeomiconsSquared";
 	content: "\25B9";
@@ -869,6 +911,10 @@ div.aligncenter {
 	padding-left: .25em;
 }
 
+article .readmore a:hover,
+.column .readmore a:hover {
+	color: #42210B;
+}
 
 /* -- blog single post styles --*/
 
