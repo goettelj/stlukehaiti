@@ -90,7 +90,7 @@
 	
 	<div id="page">
 		<header class="main-header">
-			<img class="main-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/header_logo.png" alt="St. Luke Foundation for Haiti" class="">
+			<img class="main-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/stluke-logo.png" alt="St. Luke Foundation for Haiti" class="" >
 			<nav id="externalNav">
 			  <a class="donate-link button-link" href="https://donatenow.networkforgood.org/stlukehaiti" target="_blank">DONATE
 			  </a><a class="join-email-link button-link" href="http://eepurl.com/LD9_1" target="_blank">JOIN EMAIL LIST
@@ -102,7 +102,7 @@
 			    <div class="dot-bar dot-bar-top"></div>
 		        <div class="main-menu-wrapper">
 				    <ul class="main-menu clearfix">
-    					<?php wp_list_pages('title_li=&include=6,7,10,12,14,16,155,26'); ?> <!--exclude 'slideshow' and 'grid' page-->
+    					<?php wp_list_pages('title_li=&include=7,10,12,14,16,155,26'); ?> <!--exclude 'slideshow' and 'grid' page.  EDIT on 5/27/14: also removed "home" (page id 6) -->
     				</ul>
     				<!-- THIS GETS MOVED WITH JAVASCRIPT -->
     				<ul id="teamMenu">

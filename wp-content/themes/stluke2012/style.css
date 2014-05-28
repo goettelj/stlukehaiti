@@ -18,6 +18,7 @@ Christmas Party Red #bf1f2d
 */
 
 
+
 /*Reset All*/
 *{ margin:0; padding:0; border:none; z-index:0; }
 
@@ -93,6 +94,9 @@ h1, h2, h3 { margin-bottom: .5em; line-height: 1.25em; }
 	       .main-logo {
 	           position: absolute;
                top: 15px;
+               
+               max-width: 235px;
+               
 	       }
 	       .main-menu-wrapper { float: right; }
 	       ul.main-menu, ul.dropit-submenu {
