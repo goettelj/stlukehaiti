@@ -94,7 +94,7 @@ h1, h2, h3 { margin-bottom: .5em; line-height: 1.25em; }
 	       .main-logo {
 	           position: absolute;
                top: 15px;
-               
+               background: #fff;
                max-width: 235px;
                
 	       }
@@ -109,8 +109,8 @@ h1, h2, h3 { margin-bottom: .5em; line-height: 1.25em; }
 	       }
 	       ul.main-menu > li > a, ul.dropit-submenu a {
 	           text-transform: uppercase;
-	           font-size: 16px;
-	           padding: 0 15px;
+	           font-size: 15px;
+	           padding: 0 14px;
 	           border-right: 2px solid #42210B;
 	           font-weight: bold;
    	       }
