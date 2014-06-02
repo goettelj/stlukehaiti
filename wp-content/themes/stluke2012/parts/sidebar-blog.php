@@ -1,12 +1,7 @@
 <div class="action-items">
-	<h2>Take Action</h2>
-	<ul>
-		<li><a class="ss-write" href="#">Sign our pledge</a></li>
-		<li><a class="ss-envelope" href="#">Sign up for news</a></li>
-		<li><a class="ss-tshirt" href="#">Buy a t-shirt</a></li>
-		<li><a class="ss-heart" href="#">Make a donation</a></li>
-		<li><a class="ss-chat" href="#">Get in touch about a partnership</a></li>
-	</ul>
+	
+	<?php the_field("take_action_block", 621); ?>
+	
 </div>
 
 
