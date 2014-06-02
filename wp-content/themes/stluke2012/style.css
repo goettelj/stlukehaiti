@@ -1001,7 +1001,7 @@ figure figcaption {
 	font-weight: bold;
 }
 
-.back, .next {
+.back, .forward {
 	position: absolute;
 	top: 32%;
 	width: 30%;
@@ -1017,14 +1017,14 @@ figure figcaption {
 	background: url(images/arrow_left.png) 15% 50% no-repeat;
 }
 
-.next {
+.forward {
 	right: 0;
 	background: url(images/arrow_right.png) 85% 50% no-repeat;
 
 }
 
 .back:hover, 
-.next:hover {
+.forward:hover {
 	opacity: 1;
 }
 

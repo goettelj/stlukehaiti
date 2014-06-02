@@ -19,7 +19,7 @@ while(has_sub_field("content")): ?>
 			<div class="featured-slideshow">
 		
 			<?php if(get_sub_field('slide')): ?>
-				<div class="cycle-slideshow" data-cycle-slides=".slideshow-slide" data-cycle-prev=".back" data-cycle-next=".next"  data-cycle-timeout=0>
+				<div class="cycle-slideshow" data-cycle-slides=".slideshow-slide" data-cycle-prev=".back" data-cycle-next=".forward"  data-cycle-timeout=0>
 					<?php while(has_sub_field('slide')): ?>
 						<figure class="slideshow-slide">
 							<img src="<?php the_sub_field("image"); ?>" alt="<?php the_sub_field("alt"); ?>"  />
@@ -31,7 +31,7 @@ while(has_sub_field("content")): ?>
 				</div>
 				
 				<div class="back"></div>
-				<div class="next"></div>
+				<div class="forward"></div>
 			
 			<?php endif; ?>		
 			</div>
