@@ -77,7 +77,7 @@ Template Name: Blog Homepage
 						
 					<?php endwhile; ?>
 
-					<p class="readmore"><a href="/blog-archive">Read more stories</p></div>
+					<p class="readmore"><a href="/blog-archive">Read more stories</p>
 
 				<?php else : ?>
 

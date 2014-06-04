@@ -17,6 +17,17 @@ Christmas Party Red #bf1f2d
 ===========================================
 */
 
+.alignright,
+.right {
+	float: right;
+	margin: 0 0 1.5em 1.5em;
+}
+
+.alignleft,
+.left {
+	float: left;
+	margin: 0  1.5em 1.5em 0;
+}
 
 
 /*Reset All*/
@@ -846,6 +857,11 @@ div.aligncenter {
 
 .categories ul {
 	list-style: none;
+	
+}
+
+.categories ul li {
+	padding: .25em 0 ;
 	
 }	
 
