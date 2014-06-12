@@ -716,6 +716,23 @@ div.aligncenter {
 
 /* BLOG ENHANCEMENTS - UPDATED MAY 2014 */
 
+.blog-post a, 
+.blog-home a, 
+.blog-archive a {
+	color: #879904;
+	text-decoration: none;
+	border-bottom: 1px dotted #879904;
+	opacity: .9;
+}
+
+.blog-post a:hover, 
+.blog-home a:hover, 
+.blog-archive a:hover {
+	color: #879904;
+	border-bottom: 1px solid #879904;
+	opacity: 1;
+}
+
 /* -- homepage --*/
 
 .column h2 {
