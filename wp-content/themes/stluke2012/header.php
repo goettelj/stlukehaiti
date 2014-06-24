@@ -16,6 +16,7 @@
 	<?php } ?>
 	<meta property="fb:admins" content="" />
 	<meta property="fb:page_id" content="" />
+	
 	<title>
 		<?php bloginfo('name'); ?>
 	</title>
