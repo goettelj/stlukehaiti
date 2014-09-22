@@ -103,7 +103,7 @@
 			    <div class="dot-bar dot-bar-top"></div>
 		        <div class="main-menu-wrapper">
 				    <ul class="main-menu clearfix">
-    					<?php wp_list_pages('title_li=&include=647,7,10,12,14,16,155,26'); ?> <!--exclude 'slideshow' and 'grid' page.  -->
+    					<?php wp_list_pages('title_li=&include=647,7,10,12,14,488,155,26'); ?> <!--exclude 'slideshow' and 'grid' page.  -->
     				</ul>
     				<!-- THIS GETS MOVED WITH JAVASCRIPT -->
     				<ul id="teamMenu">
