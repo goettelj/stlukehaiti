@@ -1066,7 +1066,8 @@ figure figcaption {
 #content ul,
 #content ol {
 	margin-left: 1.5em;
-	
+	margin-bottom: 1em; /* match paragraphs */
+	padding-bottom: 10px; /* match paragraphs */
 }
 
 .entry li {
