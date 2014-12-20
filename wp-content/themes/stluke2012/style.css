@@ -646,15 +646,15 @@ div.aligncenter {
 }
 
 /* AMBASSADORS */
-.ambassador {
+.ambassador, .ac-member {
 	min-height: 125px;
 	margin-bottom: 15px;
 }
-.ambassador img {
+.ambassador img, .ac-member img {
 	margin-right: 15px;
 	vertical-align: top;
 }
-.ambassador-info {
+.ambassador-info, .ac-member-info {
 	display: inline-block;
 	width: 570px;
 }
