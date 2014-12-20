@@ -1061,6 +1061,20 @@ figure figcaption {
 	opacity: 1;
 }
 
+/* Additional styles - UPDATED October 2014 */
+
+#content ul,
+#content ol {
+	margin-left: 1.5em;
+	margin-bottom: 1em; /* match paragraphs */
+	padding-bottom: 10px; /* match paragraphs */
+}
+
+.entry li {
+	padding-bottom: .5em;
+}
+
+
 /* CHRISTMAS PARTIES */
 #xmasLogo {
 	display: block;
