@@ -107,8 +107,8 @@
     				</ul>
     				<!-- THIS GETS MOVED WITH JAVASCRIPT -->
     				<ul id="teamMenu">
-    				    <li><a href="/haitian-leadership">Haitian Leadership</a></li>
-    				    <li><a href="/advisory-council">Advisory Council</a></li>
+    				    <li><a href="/haitian-leadership">Leadership</a></li>
+    				    <li><a href="/advisory-board">Advisory Board</a></li>
     				    <li><a href="/ambassadors">Ambassadors</a></li>
     				    <li><a href="/partners">Partners</a></li>
     				</ul>
