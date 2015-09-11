@@ -1,6 +1,7 @@
 <?php 
-	get_header(); 
-	$pagesWithoutAutoParagraph = array("Ambassadors", "Advisory Council", "Mass Cards", "AAN", "Haiti Moms", "Jozy and Adriana");
+	get_header();
+	// EACH PAGE LISTED HERE WILL NOT USE AUTO PARAGRAPHS 
+	$pagesWithoutAutoParagraph = array("Ambassadors", "Partners", "Advisory Board", "Mass Cards", "AAN", "Haiti Moms", "Jozy and Adriana");
 	if ( in_array(get_the_title(), $pagesWithoutAutoParagraph) ){
 		remove_filter('the_content','wpautop');
 	}
