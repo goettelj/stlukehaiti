@@ -653,6 +653,7 @@ div.aligncenter {
 .ambassador img, .ac-member img {
 	margin-right: 15px;
 	vertical-align: top;
+	max-width: 125px;
 }
 .ambassador-info, .ac-member-info {
 	display: inline-block;

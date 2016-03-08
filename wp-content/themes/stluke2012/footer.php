@@ -6,7 +6,7 @@
 		<span class="offsetfooter">
 			CONTACT: <a href="mailto:info@stlukehaiti.org">info@stlukehaiti.org</a>
 			&nbsp;&nbsp;|&nbsp;&nbsp;
-			<a href="https://npo1.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=1005615&uniqueID=634713724539679837">DONATE</a>
+			<a href="http://stlukehaiti.org/donate/">DONATE</a>
 			&nbsp;&nbsp;|&nbsp;&nbsp;
 			<a href="privacy-policy">PRIVACY POLICY</a>
 		</span>
